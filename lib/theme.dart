@@ -7,7 +7,6 @@ class AppTheme {
     fontFamily: 'Product Sans',
     accentColor: Color(0xff1f4037),
   
-
   );
 
 }

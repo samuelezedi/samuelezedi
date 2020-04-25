@@ -1,5 +1,7 @@
 
 import 'package:flutter/material.dart';
+import 'package:samuelezedi/screen/mobile.dart';
+import 'package:samuelezedi/screen/tabletview.dart';
 import 'desktop.dart';
 
 class IndexPage extends StatefulWidget {
@@ -16,17 +18,12 @@ class _IndexPageState extends State<IndexPage> {
           //computers
           return DeskTopView(constraints);
 
-        } else if (constraints.maxWidth > 805 && constraints.maxWidth < 1200) {
+        } else if (constraints.maxWidth > 600 && constraints.maxWidth < 1200) {
           //tablets
-          // return TabletView();
-        } else if (constraints.maxWidth > 400 && constraints.maxWidth < 805) {
-          //tablets
-          // return SmallTabletView();
-        } else {
-          //mobile views
-          // retu/rn MobileView();
+          return TabletView(constraints);
+        } else  {
+          return MobileView(constraints);
         }
-        return Offstage();
       },
       );
   }

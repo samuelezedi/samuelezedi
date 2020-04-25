@@ -35,11 +35,13 @@ class MobileView extends StatelessWidget {
                                     'https://pronoun.com.ng' : 'ProNoun',
                                     'https://cubiclab.net' : 'CubicLab'
                                   },
+                                  style: TextStyle(fontSize: 15, color: Colors.black,fontFamily: 'Product Sans'),
                                   linkStyle: TextStyle(decoration: TextDecoration.underline, fontSize: 15 , color: Colors.green,fontFamily: 'Product Sans'),
                                 ),
                                 SizedBox(height: 20,),
-                                LinkWell(
-                                  "I'm an aspiring tech leader, speaker and problem solver, I have written quiet a number of technical articles on medium and still writing."
+                                Text(
+                                  "I'm an aspiring tech leader, speaker and problem solver, I have written quiet a number of technical articles on medium and still writing.",
+                                  TextStyle(fontSize: 15, color: Colors.black,fontFamily: 'Product Sans'),
                                 ),
                                 SizedBox(height: 20,),
                                 LinkWell(
@@ -50,6 +52,7 @@ class MobileView extends StatelessWidget {
                                     "https://twitter.com/samuelezedi" : "Twitter",
                                     "https://instagram.com/samuelezedi" : "Instagram"
                                   },
+                                  style: TextStyle(fontSize: 15, color: Colors.black,fontFamily: 'Product Sans'),
                                   linkStyle: TextStyle(fontSize: 15,color: Colors.green,fontFamily: 'Product Sans', decoration: TextDecoration.underline),
                                 ),
                                 SizedBox(height: 20,),

@@ -8,63 +8,65 @@ class DeskTopView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.lightGreen,
+      color: Colors.white,
       child: Container(
         color: Colors.white,
         margin: EdgeInsets.all(17),
         padding: EdgeInsets.only(left: 15,right: 15,top: 15, bottom: 0),
         child: Column(children: <Widget>[
           Expanded(child: Container(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Container(
-                  width: constraints.biggest.width / 2,
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                "I'm a passionate Software Developer, with immense specialty in Flutter for Mobile and Web, PHP Laravel for Backend AS A Service. Also a Music Art junkie and futurist.",
-                                style: TextStyle(fontSize: 17, color: Colors.black,fontFamily: 'Product Sans'),
-                              ),
-                              SizedBox(height: 20,),
-                              LinkWell(
-                                "I'm currently the CTO at https://pronoun.com.ng an online educational platform for NOUN students, and also a founding partner at https://cubiclab.net, a software developement company in Nigeria.",
-                                listOfNames: {
-                                  'https://pronoun.com.ng' : 'ProNoun',
-                                  'https://cubiclab.net' : 'CubicLab'
-                                },
-                                style: TextStyle(fontSize: 17, color: Colors.black,fontFamily: 'Product Sans'),
-                                linkStyle: TextStyle(decoration: TextDecoration.underline, fontSize: 17 , color: Colors.green,fontFamily: 'Product Sans'),
-                              ),
-                              SizedBox(height: 20,),
-                              Text(
-                                "I'm an aspiring tech leader, speaker and problem solver, I have written quiet a number of technical articles on medium and still writing.",
-                                style: TextStyle(fontSize: 17, color: Colors.black,fontFamily: 'Product Sans'),
-                              ),
-                              SizedBox(height: 20,),
-                              LinkWell(
-                                "https://github.com/samuelezedi https://medium.com/@samuelezedi https://twitter.com/samuelezedi https://instagram.com/samuelezedi",
-                                listOfNames: {
-                                  "https://github.com/samuelezedi" : "Github",
-                                  "https://medium.com/@samuelezedi" : "Medium",
-                                  "https://twitter.com/samuelezedi" : "Twitter",
-                                  "https://instagram.com/samuelezedi" : "Instagram"
-                                },
-                                style: TextStyle(fontSize: 17, color: Colors.black,fontFamily: 'Product Sans'),
-                                linkStyle: TextStyle(fontSize: 17,color: Colors.green,fontFamily: 'Product Sans', decoration: TextDecoration.underline),
-                              ),
-                              SizedBox(height: 20,),
-                            ],
-                          ),
-                ),
+            child: SingleChildScrollView(
+                          child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Container(
+                    width: constraints.biggest.width / 2,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text(
+                                  "I'm a passionate Software Developer, with immense specialty in Flutter for Mobile and Web, PHP Laravel for Backend AS A Service. Also a Music Art junkie and futurist.",
+                                  style: TextStyle(fontSize: 17, color: Colors.black,fontFamily: 'Product Sans'),
+                                ),
+                                SizedBox(height: 20,),
+                                LinkWell(
+                                  "I'm currently the CTO at https://pronoun.com.ng an online educational platform for NOUN students, and also a founding partner at https://cubiclab.net, a software developement company in Nigeria.",
+                                  listOfNames: {
+                                    'https://pronoun.com.ng' : 'ProNoun',
+                                    'https://cubiclab.net' : 'CubicLab'
+                                  },
+                                  style: TextStyle(fontSize: 17, color: Colors.black,fontFamily: 'Product Sans'),
+                                  linkStyle: TextStyle(decoration: TextDecoration.underline, fontSize: 17 , color: Colors.green,fontFamily: 'Product Sans'),
+                                ),
+                                SizedBox(height: 20,),
+                                Text(
+                                  "I'm an aspiring tech leader, speaker and problem solver, I have written quiet a number of technical articles on medium and still writing.",
+                                  style: TextStyle(fontSize: 17, color: Colors.black,fontFamily: 'Product Sans'),
+                                ),
+                                SizedBox(height: 20,),
+                                LinkWell(
+                                  "https://github.com/samuelezedi https://medium.com/@samuelezedi https://twitter.com/samuelezedi https://instagram.com/samuelezedi",
+                                  listOfNames: {
+                                    "https://github.com/samuelezedi" : "Github",
+                                    "https://medium.com/@samuelezedi" : "Medium",
+                                    "https://twitter.com/samuelezedi" : "Twitter",
+                                    "https://instagram.com/samuelezedi" : "Instagram"
+                                  },
+                                  style: TextStyle(fontSize: 17, color: Colors.black,fontFamily: 'Product Sans'),
+                                  linkStyle: TextStyle(fontSize: 17,color: Colors.green,fontFamily: 'Product Sans', decoration: TextDecoration.underline),
+                                ),
+                                SizedBox(height: 20,),
+                              ],
+                            ),
+                  ),
 
-                Container(
-                  width: constraints.biggest.width / 3,
-                  child: Image.asset('images/me.jpeg',width:160)
-                ),
-              ],
+                  // Container(
+                  //   width: constraints.biggest.width / 3,
+                  //   child: Image.asset('images/me.jpeg',width:160)
+                  // ),
+                ],
+              ),
             ),
           ),),
           Container(

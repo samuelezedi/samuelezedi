@@ -14,11 +14,11 @@ class _IndexPageState extends State<IndexPage> {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints){
-        if (constraints.maxWidth > 1200) {
+        if (constraints.maxWidth > 700) {
           //computers
           return DeskTopView(constraints);
 
-        } else if (constraints.maxWidth > 600 && constraints.maxWidth < 1200) {
+        } else if (constraints.maxWidth > 350 && constraints.maxWidth < 700) {
           //tablets
           return TabletView(constraints);
         } else  {

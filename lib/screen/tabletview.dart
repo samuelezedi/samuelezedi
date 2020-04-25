@@ -7,7 +7,7 @@ class TabletView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.lightGreen,
+      color: Colors.white,
       child: Container(
         color: Colors.white,
         margin: EdgeInsets.all(17),
@@ -60,10 +60,10 @@ class TabletView extends StatelessWidget {
                             ),
                   ),
 
-                  Container(
-                    width: constraints.biggest.width / 3,
-                    child: Image.asset('images/me.jpeg',width:160)
-                  ),
+                  // Container(
+                  //   width: constraints.biggest.width / 3,
+                  //   child: Image.asset('images/me.jpeg',width:160)
+                  // ),
                 ],
               ),
             ),

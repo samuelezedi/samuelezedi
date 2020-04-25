@@ -42,8 +42,8 @@ class DeskTopView extends StatelessWidget {
         ),),
         RichText(text: TextSpan(
           children: [
-            TextSpan(text: "Samuel",style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold)),
-            TextSpan(text: "Ezedi",style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold))
+            TextSpan(text: "Samuel",style: TextStyle(fontSize: 200, fontWeight: FontWeight.bold)),
+            TextSpan(text: "Ezedi",style: TextStyle(fontSize: 200, fontWeight: FontWeight.bold))
           ]
           ),)
       ],),

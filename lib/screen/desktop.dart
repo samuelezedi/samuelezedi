@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:linkwell/linkwell.dart';
 
 class DeskTopView extends StatelessWidget {
-  var constraints;
+  final constraints;
   DeskTopView(this.constraints);
   @override
   Widget build(BuildContext context) {
@@ -14,10 +14,11 @@ class DeskTopView extends StatelessWidget {
                   child: ListView(
                     children: <Widget>[
                       Text(
-                        "I'm a Software Developer, with immense specialty in Flutter for Mobile and Web, PHP Laravel for Backend AS A Service. Also I'm Music Art Junkie and futurist"
+                        "I'm a passionate Software Developer, with immense specialty in Flutter for Mobile and Web, PHP Laravel for Backend AS A Service. Also a Music Art Junkie and futurist",
+                        style: TextStyle(color: Colors.black),
                       ),
                       LinkWell(
-                        "I'm current the CTO at https://pronoun.com.ng, a startup online educational platform for students in Nigeria.",
+                        "I'm currently the CTO at https://pronoun.com.ng, a online startup educational platform for students in Nigeria.",
                         listOfNames: {
                           'https://pronoun.com.ng' : 'ProNoun',
                         },
@@ -34,15 +35,15 @@ class DeskTopView extends StatelessWidget {
                           "https://twitter.com/samuelezedi" : "Twitter",
                           "https://instagram.com/samuelezedi" : "Instagram"
                         },
-                        linkStyle: TextStyle(color: Colors.green),
+                        linkStyle: TextStyle(color: Colors.green, decoration: TextDecoration.underline),
                       )
                     ],
                   ),
         ),),
         RichText(text: TextSpan(
           children: [
-            TextSpan(text: "Samuel"),
-            TextSpan(text: "Ezedi",style: TextStyle(fontWeight: FontWeight.bold))
+            TextSpan(text: "Samuel",style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold)),
+            TextSpan(text: "Ezedi",style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold))
           ]
           ),)
       ],),

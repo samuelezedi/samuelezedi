@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'desktop.dart';
 
 class IndexPage extends StatefulWidget {
   @override
@@ -13,18 +14,20 @@ class _IndexPageState extends State<IndexPage> {
       builder: (context, constraints){
         if (constraints.maxWidth > 1200) {
           //computers
-          return DesktopView(constraints);
+          return DeskTopView(constraints);
+
         } else if (constraints.maxWidth > 805 && constraints.maxWidth < 1200) {
           //tablets
-          return TabletView();
+          // return TabletView();
         } else if (constraints.maxWidth > 400 && constraints.maxWidth < 805) {
           //tablets
-          return SmallTabletView();
+          // return SmallTabletView();
         } else {
           //mobile views
-          return MobileView();
+          // retu/rn MobileView();
         }
+        return Offstage();
       },
-      )
+      );
   }
 }

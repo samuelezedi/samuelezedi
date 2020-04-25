@@ -42,12 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(Duration(seconds: 1)).then((value) {
-      setState(() {
-        ready = true;
-      });
-      Navigator.push(context, MaterialPageRoute(builder: (context) => IndexPage()));
-    });
+    
   }
  
   @override
@@ -56,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: Container(
         child: Center(        
-          child: CircularProgressIndicator()
+          child: IndexPage()
         ),
       ),
     );

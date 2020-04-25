@@ -35,7 +35,7 @@ class TabletView extends StatelessWidget {
                                     'https://pronoun.com.ng' : 'ProNoun',
                                     'https://cubiclab.net' : 'CubicLab'
                                   },
-                                  linkStyle: TextStyle(fontSize: 15 , color: Colors.green,fontFamily: 'Product Sans'),
+                                  linkStyle: TextStyle(decoration: TextDecoration.underline, fontSize: 15 , color: Colors.green,fontFamily: 'Product Sans'),
                                 ),
                                 SizedBox(height: 20,),
                                 LinkWell(
@@ -72,8 +72,8 @@ class TabletView extends StatelessWidget {
               fit: BoxFit.contain,
                 child: RichText(text: TextSpan(              
                 children: [
-                  TextSpan(text: "Samuel ",style: TextStyle(color: Colors.black.withOpacity(0.8),fontFamily: 'Product Sans',fontWeight: FontWeight.w100)),
-                  TextSpan(text: "Ezedi",style: TextStyle(color: Colors.black.withOpacity(0.8), fontFamily: 'Product Sans', fontWeight: FontWeight.bold))
+                  TextSpan(text: "Samuel ",style: TextStyle(color: Colors.black.withOpacity(0.8),fontFamily: 'Product Sans',)),
+                  TextSpan(text: "Ezedi",style: TextStyle(color: Colors.black.withOpacity(0.8), fontFamily: 'Product Sans',))
                 ]
                 ),),
             ),

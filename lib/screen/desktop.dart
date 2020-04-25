@@ -35,7 +35,7 @@ class DeskTopView extends StatelessWidget {
                                   'https://pronoun.com.ng' : 'ProNoun',
                                   'https://cubiclab.net' : 'CubicLab'
                                 },
-                                style: TextStyle(fontSize: 15, color: Colors.black,fontFamily: 'Product Sans'),,
+                                style: TextStyle(fontSize: 15, color: Colors.black,fontFamily: 'Product Sans'),
                                 linkStyle: TextStyle(decoration: TextDecoration.underline, fontSize: 17 , color: Colors.green,fontFamily: 'Product Sans'),
                               ),
                               SizedBox(height: 20,),

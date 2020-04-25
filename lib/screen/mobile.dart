@@ -41,7 +41,7 @@ class MobileView extends StatelessWidget {
                                 SizedBox(height: 20,),
                                 Text(
                                   "I'm an aspiring tech leader, speaker and problem solver, I have written quiet a number of technical articles on medium and still writing.",
-                                  TextStyle(fontSize: 15, color: Colors.black,fontFamily: 'Product Sans'),
+                                  style: TextStyle(fontSize: 15, color: Colors.black,fontFamily: 'Product Sans'),
                                 ),
                                 SizedBox(height: 20,),
                                 LinkWell(

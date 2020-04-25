@@ -30,7 +30,7 @@ class TabletView extends StatelessWidget {
                                 ),
                                 SizedBox(height: 20,),
                                 LinkWell(
-                                  "I'm currently the CTO at https://pronoun.com.ng an online startup educational platform for NOUN students, and also a founding partner at https://cubiclab.net, a software developement company in Nigeria.",
+                                  "I'm currently the CTO at https://pronoun.com.ng an online educational platform for NOUN students, and also a founding partner at https://cubiclab.net, a software developement company in Nigeria.",
                                   listOfNames: {
                                     'https://pronoun.com.ng' : 'ProNoun',
                                     'https://cubiclab.net' : 'CubicLab'
